@@ -25,11 +25,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Coming from a small, rural town in Colombia, I deeply understand the impact education can have on the trajectory of one's life. Motivated by my lived experience and a desire to change the world for the better, I am passionate about addressing disparities in our education system by **bridging the gap between research and practice**. 
+Coming from a small, rural town in Colombia, I deeply understand the impact education can have on the trajectory of one's life. Motivated by my lived experience and a desire to change the world for the better, I am passionate about addressing disparities in our education system by **bridging the gap between research and practice**.
 
 Through empirical methods, advocacy, and public policy, I aim to make a world where childen don't have to consider themselves lucky to have earned a high school or college education.
-
-
 
 <h2>Featured Projects</h2>
 
@@ -45,4 +43,3 @@ Through empirical methods, advocacy, and public policy, I aim to make a world wh
     View all projects →
   </a>
 </p>
-
