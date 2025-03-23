@@ -28,3 +28,18 @@ latest_posts:
 Coming from a small, rural town in Colombia, I deeply understand the impact education can have on the trajectory of one's life. Motivated by my lived experience and a desire to change the world for the better, I am passionate about addressing disparities in our education system by **bridging the gap between research and practice**. 
 
 Through empirical methods, advocacy, and public policy, I am to make a world where childen don't have to consider themselves lucky to have earned a high school or college education.
+
+<h2>Featured Projects</h2>
+
+<div class="row row-cols-1 row-cols-md-3">
+  {% assign sorted_projects = site.projects | sort: "importance" | slice: 0,3 %}
+  {% for project in sorted_projects %}
+    {% include projects.liquid %}
+  {% endfor %}
+</div>
+
+<p class="mt-4">
+  <a href="{{ '/projects/' | relative_url }}" class="btn btn-outline-primary">
+    View all projects →
+  </a>
+</p>
