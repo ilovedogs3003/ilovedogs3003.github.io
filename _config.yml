@@ -3,11 +3,11 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Jefrey
+first_name: Jefrey Alexander
 middle_name:
-last_name: Alexander
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+last_name:
+#contact_note: >
+  #You can most easily reach me via email!
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -23,6 +23,12 @@ baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
+show_navbar: true # set to false to disable the navigation bar on the top of the page
+show_footer: true # set to false to disable the footer on the bottom of the page
+show_breadcrumbs: true # set to false to disable the breadcrumbs on the top of the page
+show_search: true # set to false to disable the search bar on the top of the page
+show_social: true # set to false to disable the social media links on the top of the page
+
 
 # -----------------------------------------------------------------------------
 # Theme
