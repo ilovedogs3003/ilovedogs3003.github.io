@@ -28,9 +28,7 @@ show_breadcrumbs: true # set to false to disable the breadcrumbs on the top of t
 show_search: false # set to false to disable the search bar on the top of the page
 show_social: true # set to false to disable the social media links on the top of the page
 
-exclude:
-  - _posts
-  - blog
+
 
 
 
@@ -203,6 +201,8 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _posts
+  - blog
 keep_files:
   - CNAME
   - .nojekyll
