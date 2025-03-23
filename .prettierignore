@@ -10,3 +10,8 @@ _posts/2015-10-20-math.md
 _sass/font-awesome/*.scss
 _sass/tabler-icons/*.scss
 _scripts/search.liquid.js
+# Ignore Liquid YAML files that confuse Prettier
+_config.yml
+_config/*.yml
+assets/**/*.yml
+_data/**/*.yml
