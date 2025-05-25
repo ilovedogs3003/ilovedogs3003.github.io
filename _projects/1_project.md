@@ -9,7 +9,8 @@ related_publications: true
 ---
 
 <h5><b>Description</b>: This project interprets a myriad of multivariate regressions and highlights the importance of understanding the data you're working with when doing so.</h5>
-<h6><b><i>Data from Decker et. al (2004)</b></i></h6>
+<h6><b><i>Data from Decker et. al (2004)</i></b></h6>
+
 
 <h4><b>Data Description</b></h4>
 
@@ -23,7 +24,7 @@ This data specifically focuses on the impact that Teach for America teachers hav
 The following is a perfect example of what <b>not to do</b>. You should not run a series of regression models <b>without checking assumptions</b> or properly understanding the distribution of your data and how that may <i>influence</i> or <b>bias</b> the outcomes
 
 <h5><b> The Following is a Bivariate Regression:</b></h5>
-In this specific analysis, I am trying to see the baseline relationship between end of year math scores and treatment (i.e., whether the student had a Teach for America teacher). At a baseline, a less knowledgeable social scientist *may* feel compelled to tell you that--although the results are not significant--they indicate the potential of fruitful results. Significance not withstanding, those who received treatment scored **1.38 points higher, on average, on their end of year math scores**. 
+In this specific analysis, I am trying to see the baseline relationship between end of year math scores and treatment (i.e., whether the student had a Teach for America teacher). At a baseline, a less knowledgeable social scientist <i>may</i> feel compelled to tell you that--although the results are not significant--they indicate the potential of fruitful results. Significance not withstanding, those who received treatment scored **1.38 points higher, on average, on their end of year math scores**. 
 
 
 However, a closer inspection at the R-squared reveals a model that explains less than .1% of the variation within the data. Similarly, the F-statistic--an indicator of model strength--being relatively low highlights the inefficacy of this being a sufficient analysis. 
@@ -48,14 +49,31 @@ The only difference between the models is that the first defines the number of d
     </div>
 </div>
 
-The first model, where the number of days suspended is defined as categorical variable, has an R-squared and F-statistic larger than the second model where it's defined as a continuous variable(*F* = 13.76 v. 12.44; R-squared = .039 v. .035). This gives the aforementioned justification some credence.
+The first model, where the number of days suspended is defined as categorical variable, has an R-squared and F-statistic larger than the second model where it's defined as a continuous variable(<i>F</i> = 13.76 v. 12.44; R-squared = .039 v. .035). This gives the aforementioned justification some credence.
 
-
+```html
+<div style="height: 32px;"></div>
+```
 <h4><b>Unconditional Model v. First Model</b></h4>
 The inclusion of additional variables allows us to control for their influence over the dependent variable. With these variables incorporated, we saw a considerable increase in our model's efficacy. Forgoing discussion of model parameters, a noteworthy increase is the estimated influence of treatment on math scores: albeit still insignificant, the unconditional model estimated Teach for America teachers to increase math scores, on average, by 1.37 points while the first model estimated that influence to be 1.51.
 
 
-<h5><i>It is important to note that the proper way of constructing a taxonomy of models is to include each additional variable one at a time. From there, compare the impact that each variable has on the regression results to better understand their explanatory power.</i></h5>
+<h6><i>It is important to note that the proper way of constructing a taxonomy of models is to include each additional variable one at a time. From there, compare the impact that each variable has on the regression results to better understand their explanatory power.</i></h6>
+
+<h4><b>Let's Visualize It:</b></h4>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/tfa_scatter.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+I could be verbose here about the implications of students missing more than 20 days (truancy and court involvement usually happens at around 10 days); however, what's important to understand here is that--considering the sample as a whole--there is a slight negative association between the number of absent days and end of year math scores.
+```html
+<div style="height: 16px;"></div>
+```
+In the context of Education Policy, it is <b>crucial</b> to understand how relationships differ between schools.
+however, looking at how relationships differ between schools is **crucial.**
+
+
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
