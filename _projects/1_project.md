@@ -23,7 +23,7 @@ This data specifically focuses on the impact that Teach for America teachers hav
 <h4><b>Multivariate Regressions</b></h4>
 The following is a perfect example of what <b>not to do</b>. You should not run a series of regression models <b>without checking assumptions</b> or properly understanding the distribution of your data and how that may <i>influence</i> or <b>bias</b> the outcomes
 
-<h5><b> The Following is a Bivariate Regression:</b></h5>
+
 In this specific analysis, I am trying to see the baseline relationship between end of year math scores and treatment (i.e., whether the student had a Teach for America teacher). At a baseline, a less knowledgeable social scientist <i>may</i> feel compelled to tell you that--although the results are not significant--they indicate the potential of fruitful results. Significance not withstanding, those who received treatment scored **1.38 points higher, on average, on their end of year math scores**. 
 
 
@@ -36,7 +36,7 @@ However, a closer inspection at the R-squared reveals a model that explains less
 
 
 <h5><b>Now Let's Add More Variables:</b></h5>
-The following models add the number of days absent, the number of days suspended, whether the student receives free lunch (as a proxy for socioeconomic status),nd the number of students.
+The following models add the number of days absent, the number of days suspended, whether the student receives free lunch (as a proxy for socioeconomic status), and the number of students.
 
 
 The only difference between the models is that the first defines the number of days suspended as a continuous variable, while the latter defines it as categorical. For susbequent analyses, I am choosing to define the number of days suspended as a categorical variable where 0 = never suspended and 1 = suspended 1 or more times. The substantive justificaiton for doing so is the belief that the number of days suspended doesn't matter, but the students being suspended at all share some form of baseline characteristics that may set them apart from other students.
@@ -49,11 +49,8 @@ The only difference between the models is that the first defines the number of d
     </div>
 </div>
 
-The first model, where the number of days suspended is defined as categorical variable, has an R-squared and F-statistic larger than the second model where it's defined as a continuous variable(<i>F</i> = 13.76 v. 12.44; R-squared = .039 v. .035). This gives the aforementioned justification some credence.
-
-```html
+<p>The first model, where the number of days suspended is defined as categorical variable, has an R-squared and F-statistic larger than the second model where it's defined as a continuous variable(<i>F</i> = 13.76 v. 12.44; R-squared = .039 v. .035). This gives the aforementioned justification some credence.</p>
 <div style="height: 32px;"></div>
-```
 <h4><b>Unconditional Model v. First Model</b></h4>
 The inclusion of additional variables allows us to control for their influence over the dependent variable. With these variables incorporated, we saw a considerable increase in our model's efficacy. Forgoing discussion of model parameters, a noteworthy increase is the estimated influence of treatment on math scores: albeit still insignificant, the unconditional model estimated Teach for America teachers to increase math scores, on average, by 1.37 points while the first model estimated that influence to be 1.51.
 
