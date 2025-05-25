@@ -50,13 +50,13 @@ The only difference between the models is that the first defines the number of d
 </div>
 
 <p>The first model, where the number of days suspended is defined as categorical variable, has an R-squared and F-statistic larger than the second model where it's defined as a continuous variable(<i>F</i> = 13.76 v. 12.44; R-squared = .039 v. .035). This gives the aforementioned justification some credence.</p>
-<div style="height: 32px;"></div>
+<div style="height: 16px;"></div>
 <h4><b>Unconditional Model v. First Model</b></h4>
 The inclusion of additional variables allows us to control for their influence over the dependent variable. With these variables incorporated, we saw a considerable increase in our model's efficacy. Forgoing discussion of model parameters, a noteworthy increase is the estimated influence of treatment on math scores: albeit still insignificant, the unconditional model estimated Teach for America teachers to increase math scores, on average, by 1.37 points while the first model estimated that influence to be 1.51.
 
 
 <h6><i>It is important to note that the proper way of constructing a taxonomy of models is to include each additional variable one at a time. From there, compare the impact that each variable has on the regression results to better understand their explanatory power.</i></h6>
-
+<br><br>
 <h4><b>Let's Visualize It:</b></h4>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -73,6 +73,27 @@ In the context of Education Policy, it is <b>crucial</b> to understand how relat
         {% include figure.liquid loading="eager" path="assets/img/tfa_schoolmeans.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+<br>
+<p>Albeit gradual, there are considerable differences between the means at each school. Additionally, there appear to be several issues in terms of data collection (i.e., school 204 and 215 missing their reading scores).</p>
+<br>
+<p>
+  Focusing on math scores alone, one could attempt to address these disparities by running a 
+  <a class="btn btn-link p-0" data-bs-toggle="collapse" href="#fixedEffectsCollapse" role="button" aria-expanded="false" aria-controls="fixedEffectsCollapse">
+    <b>Fixed Effects</b>
+  </a> 
+  model.
+</p>
+
+<div class="collapse" id="fixedEffectsCollapse">
+  <div class="card card-body border-0 p-0 mt-3">
+    <div class="row">
+      <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/tfa_fe_ols_sum.png" title="Fixed Effects Results" class="img-fluid rounded z-depth-1" %}
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 
