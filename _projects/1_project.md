@@ -84,9 +84,13 @@ In the context of Education Policy, it is <b>crucial</b> to understand how relat
 
 <div class="collapse" id="fixedEffectsCollapse">
   <div class="card card-body border-0 p-0 mt-3">
-    <div class="row">
-      <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/tfa_fe_ols_sum.png" title="Fixed Effects Results" class="img-fluid rounded z-depth-1" %}
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        {% include figure.liquid 
+           loading="eager" 
+           path="assets/img/tfa_fe_ols_sum.png" 
+           title="Fixed Effects Results" 
+           class="img-fluid rounded z-depth-1" %}
       </div>
     </div>
   </div>
@@ -100,15 +104,59 @@ All things considered, the model insinuates that Teach for America teachers **do
 <br>
 Let's take a closer look at the variables we were using.
 <div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/tfa_schooldist.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/tfa_cormatrix.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+<div class="row align-items-center">
+  <!-- Image column -->
+  <div class="col-md-4">
+    <img src="assets/img/tfa_obs.png" alt="Figure" class="img-fluid rounded">
+  </div>
+
+  <!-- Text column -->
+  <div class="col-md-8">
+    <p>
+      The code and visualizations highlight several key issues within our data:
+        * Some schools are severely underrepresented
+        * The number of students receiving free lunch runs the risk of autocorrelation (this is a byproduct of it being a categorical variable included in a fixed effects regression)
+        * The data is right-skewed & the distribution looks different within each of the schools.  
+    </p>
+  </div>
+</div>
+<br>
+<p>In an attempt to address sampling issues while retaining the distribution of the data, we can artificially duplicate observations within each school of the schools.</p> 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/tfa_sampling.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<p>While undersampling is a viable alternative, it often comes at the cost of larger standard errors and weaker predictive performance.</p>
+<p>
+  The 
+  <a class="btn btn-link p-0" data-bs-toggle="collapse" href="#syntheticCollapse" role="button" aria-expanded="false" aria-controls="syntheticCollapse">
+    <b>distribution of the data</b>
+  </a> 
+  appears roughly unchanged following synthetic upsampling.
+</p>
 
 
+<div class="collapse" id="syntheticCollapse">
+  <div class="card card-body border-0 p-0 mt-3">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        {% include figure.liquid 
+           loading="eager" 
+           path="assets/img/tfa_dist_ups.png" 
+           title="Fixed Effects Results" 
+           class="img-fluid rounded z-depth-1" %}
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
