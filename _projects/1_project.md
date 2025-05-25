@@ -8,23 +8,38 @@ category: work
 related_publications: true
 ---
 
-<center>
-    <center>
-        <h2>Teach for America</h2>
-        <h3>The Importance of Adequate Research Design</h3>
-        <h5><i>Jefrey Alexander</i></h5>
-    </center>
-</center>
-
 <h5><b>Description</b>: This project interprets a myriad of multivariate regressions and highlights the importance of understanding the data you're working with when doing so.</h5>
 <h6><b><i>
     Data from Decker et. al (2004)
     
-</b></i><h6>
+</b></i></h6>
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<h4><b>Data Description</b></h4>
+
+This data was given to me in Dr. Aparna Anand's <b>EDPA 6002: Quantitative Methods for Evaluating Education Policies and Programs</b> course. While I still have access to the data, I do not have access to the data dictionary. This means that, within the dataframe, there are a lot of variables that I do not know i) how they are defined and ii) how the data was collected. Thus, the purpose of this project is <b> not to make any declarative statements, but demosntrate some of the things I've learned </b>
+
+
+This data specifically focuses on the impact that Teach for America teachers have on student outcomes.
+
+<h4><b>Multivariate Regressions</h4></b>
+The following is a perfect example of what <b>not to do</b>. You should not run a series of regression models <b>without checking assumptions</b> or properly understanding the distribution of your data and how that may <i>influence</i> or <b>bias</b> the outcomes
+
+<h5><b> The Following is a Bivariate Regression</b></h5>:
+In this specific analysis, I am trying to see the baseline relationship between end of year math scores and treatment (i.e., whether the student had a Teach for America teacher). At a baseline, a less knowledgeable social scientist *may* feel compelled to tell you that--although the results are not significant--they indicate the potential of fruitful results. Significance not withstanding, those who received treatment scored **1.38 points higher, on average, on their end of year math scores**. 
+
+However, a closer inspection at the R-squared reveals a model that explains less than .1% of the variation within the data. Similarly, the F-statistic--an indicator of model strength--being relatively low highlights the inefficacy of this being a sufficient analysis. 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/tfa_brms.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+
+<h5>Now Let's Add More Variables:</h5>
+The following models add the number of days absent, the number of days suspended, whether the student receives free lunch (as a proxy for socioeconomic status),nd the number of students.
+
+The only difference between the first and second models is whether to define the number of days suspended as a continuous or categorical variable. For susbequent analyses, I am choosing to define the number of days suspended as a categorical variable where 0 = never suspended and 1 = suspended 1 or more times. The substantive justificaiton for doing so is the belief that the number of days suspended doesn't matter, but the students being suspended at all share some form of baseline characteristics that may set them apart from other students.
+ 
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
