@@ -50,13 +50,13 @@ The only difference between the models is that the first defines the number of d
 </div>
 
 <p>The first model, where the number of days suspended is defined as categorical variable, has an R-squared and F-statistic larger than the second model where it's defined as a continuous variable(<i>F</i> = 13.76 v. 12.44; R-squared = .039 v. .035). This gives the aforementioned justification some credence.</p>
-<div style="height: 16px;"></div>
+<div style="height: 4px;"></div>
 <h4><b>Unconditional Model v. First Model</b></h4>
 The inclusion of additional variables allows us to control for their influence over the dependent variable. With these variables incorporated, we saw a considerable increase in our model's efficacy. Forgoing discussion of model parameters, a noteworthy increase is the estimated influence of treatment on math scores: albeit still insignificant, the unconditional model estimated Teach for America teachers to increase math scores, on average, by 1.37 points while the first model estimated that influence to be 1.51.
 
 
 <h6><i>It is important to note that the proper way of constructing a taxonomy of models is to include each additional variable one at a time. From there, compare the impact that each variable has on the regression results to better understand their explanatory power.</i></h6>
-<br><br>
+<br>
 <h4><b>Let's Visualize It:</b></h4>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -64,9 +64,7 @@ The inclusion of additional variables allows us to control for their influence o
     </div>
 </div>
 I could be verbose here about the implications of students missing more than 20 days (truancy and court involvement usually happens at around 10 days); however, what's important to understand here is that--considering the sample as a whole--there is a slight negative association between the number of absent days and end of year math scores.
-```html
-<div style="height: 16px;"></div>
-```
+<div style="height: 4px;"></div>
 In the context of Education Policy, it is <b>crucial</b> to understand how relationships differ between schools.
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -93,6 +91,23 @@ In the context of Education Policy, it is <b>crucial</b> to understand how relat
     </div>
   </div>
 </div>
+<br>
+<p>Accounting for school fixed effects (i.e., factors within each school that could influence the dependent variable), we see a model with considerably greater explanatory power. Our model now accounts for 21% of the variation within the observed scores and the F-statistic nearly doubled.</p>
+
+All things considered, the model insinuates that Teach for America teachers **do not** provide students with a statistically significant increase in their end of year math scores (<i>p</i> = 0.118).
+<br>
+<b>However, as I previously mentioned, this is an example of what NOT to do</b>
+<br>
+Let's take a closer look at the variables we were using.
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/tfa_schooldist.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/tfa_cormatrix.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 
 
 
