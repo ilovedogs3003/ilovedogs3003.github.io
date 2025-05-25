@@ -1,12 +1,26 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Teach for America
+description: The Importance of Adequate Research Design
+img: assets/img/tfa_pgd.png
 importance: 1
 category: work
 related_publications: true
 ---
+
+<center>
+    <center>
+        <h2>Teach for America</h2>
+        <h3>The Importance of Adequate Research Design</h3>
+        <h5><i>Jefrey Alexander</i></h5>
+    </center>
+</center>
+
+<h5><b>Description</b>: This project interprets a myriad of multivariate regressions and highlights the importance of understanding the data you're working with when doing so.</h5>
+<h6><b><i>
+    Data from Decker et. al (2004)
+    
+</b></i><h6>
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
