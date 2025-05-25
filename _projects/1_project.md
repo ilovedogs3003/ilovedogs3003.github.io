@@ -68,7 +68,11 @@ I could be verbose here about the implications of students missing more than 20 
 <div style="height: 16px;"></div>
 ```
 In the context of Education Policy, it is <b>crucial</b> to understand how relationships differ between schools.
-however, looking at how relationships differ between schools is **crucial.**
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/tfa_schoolmeans.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 
 
