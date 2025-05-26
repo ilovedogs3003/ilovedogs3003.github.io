@@ -8,11 +8,17 @@ category: work
 related_publications: true
 ---
 
-<h5><b>Description</b>: This project interprets a myriad of multivariate regressions and highlights the importance of understanding the data you're working with when doing so.</h5>
-<h6><b><i>Data from Decker et. al (2004)</i></b></h6>
-
-
-<h4><b>Data Description</b></h4>
+<h6>Description: This project interprets a myriad of multivariate regressions and highlights the importance of understanding the data you're working with when doing so.</h6>
+<p>
+  <small>
+    <b><i>
+      Data from 
+      <a href="https://www.researchgate.net/publication/292225074_The_effect_of_Teach_For_America_on_students_Findings_from_a_national_evaluation" target="_blank" rel="noopener">
+        Decker et al. (2004)
+      </a>
+    </i></b>
+  </small>
+</p>
 
 This data was given to me in Dr. Aparna Anand's <b>EDPA 6002: Quantitative Methods for Evaluating Education Policies and Programs</b> course. While I still have access to the data, I do not have access to the data dictionary. This means that, within the dataframe, there are a lot of variables that I do not know i) how they are defined and ii) how the data was collected. Thus, the purpose of this project is <b> not to make any declarative statements, but demosntrate some of the things I've learned </b>
 
