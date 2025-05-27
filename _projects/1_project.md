@@ -8,22 +8,21 @@ category: work
 related_publications: true
 ---
 
-<h6>Description: This project interprets a myriad of multivariate regressions and highlights the importance of understanding the data you're working with when doing so.</h6>
+<h6>This project interprets a myriad of multivariate regressions and highlights the importance of understanding the data you're working with when doing so. Through upsampling and various other visualizations and analyses, this project demonstrates how adequate research design can impact conclusions befitting the data. 
+</h6>
 <p>
   <small>
-    <b><i>
+    <i>
       Data from 
       <a href="https://www.researchgate.net/publication/292225074_The_effect_of_Teach_For_America_on_students_Findings_from_a_national_evaluation" target="_blank" rel="noopener">
         Decker et al. (2004)
       </a>
-    </i></b>
+    </i>
   </small>
+  given to me in Dr. Aparna Anand's <b>EDPA 6002: Quantitative Methods for Evaluating Education Policies and Programs</b> course. While I still have access to the data, I do not have access to the data dictionary. This means that, within the dataframe, there are a lot of variables that I do not know i) how they are defined and ii) how the data was collected. Thus, the purpose of this project is <b> not to make any declarative statements, but demosntrate some of the things I've learned </b>
 </p>
-
-This data was given to me in Dr. Aparna Anand's <b>EDPA 6002: Quantitative Methods for Evaluating Education Policies and Programs</b> course. While I still have access to the data, I do not have access to the data dictionary. This means that, within the dataframe, there are a lot of variables that I do not know i) how they are defined and ii) how the data was collected. Thus, the purpose of this project is <b> not to make any declarative statements, but demosntrate some of the things I've learned </b>
-
-
-This data specifically focuses on the impact that Teach for America teachers have on student outcomes.
+<br>
+This project and data specifically focuses on the impact that Teach for America teachers have on student outcomes.
 
 
 <h4><b>Multivariate Regressions</b></h4>
@@ -35,7 +34,7 @@ In this specific analysis, I am trying to see the baseline relationship between 
 
 However, a closer inspection at the R-squared reveals a model that explains less than .1% of the variation within the data. Similarly, the F-statistic--an indicator of model strength--being relatively low highlights the inefficacy of this being a sufficient analysis. 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-6 col-md-4 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/tfa_brms.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -79,7 +78,6 @@ In the context of Education Policy, it is <b>crucial</b> to understand how relat
 </div>
 <br>
 <p>Albeit gradual, there are considerable differences between the means at each school. Additionally, there appear to be several issues in terms of data collection (i.e., school 204 and 215 missing their reading scores).</p>
-<br>
 <p>
   Focusing on math scores alone, one could attempt to address these disparities by running a 
   <a class="btn btn-link p-0" data-bs-toggle="collapse" href="#fixedEffectsCollapse" role="button" aria-expanded="false" aria-controls="fixedEffectsCollapse">
@@ -110,26 +108,26 @@ All things considered, the model insinuates that Teach for America teachers **do
 <br>
 Let's take a closer look at the variables we were using.
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/tfa_schooldist.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/tfa_cormatrix.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="row align-items-center">
   <!-- Image column -->
   <div class="col-md-4">
-    <img src="assets/img/tfa_obs.png" alt="Figure" class="img-fluid rounded">
+    {% include figure.liquid path="assets/img/tfa_obs.png" title="example image" class="img-fluid rounded z-depth-1" %}
   </div>
 
   <!-- Text column -->
   <div class="col-md-8">
     <p>
-      The code and visualizations highlight several key issues within our data:
-        * Some schools are severely underrepresented
-        * The number of students receiving free lunch runs the risk of autocorrelation (this is a byproduct of it being a categorical variable included in a fixed effects regression)
-        * The data is right-skewed & the distribution looks different within each of the schools.  
+    The code and visualizations highlight several key issues within our data:
+    - Some schools are severely underrepresented.
+    - The number of students receiving free lunch runs the risk of autocorrelation (this is a byproduct of it being a categorical variable included in a fixed effects regression).
+    - The data is right-skewed, and the distribution looks different within each of the schools.
     </p>
   </div>
 </div>
@@ -165,71 +163,3 @@ Let's take a closer look at the variables we were using.
 </div>
 
 
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
