@@ -4,10 +4,8 @@ title: Teach for America
 description: The Importance of Adequate Research Design
 img: assets/img/tfa_pgd.png
 importance: 1
-category: Python
+category: work
 related_publications: true
-citation_url: https://www.researchgate.net/publication/292225074_The_effect_of_Teach_For_America_on_students_Findings_from_a_national_evaluation
-citation_label: Decker et al. (2004)
 code_url: https://colab.research.google.com/drive/106-ebadclMc1p4M85cKFXClv8y88y6KN?usp=sharing
 code_label: Open in Colab
 ---
@@ -123,17 +121,22 @@ Let's take a closer look at the variables we were using.
 </div>
 <div class="row align-items-center">
   <!-- Image column -->
-  <div class="col-md-4">
-    {% include figure.liquid path="assets/img/tfa_obs.png" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-md-4 text-center">
+    {% include figure.liquid 
+       path="assets/img/tfa_obs.png" 
+       title="example image" 
+       class="img-fluid rounded z-depth-1 w-75" %}
   </div>
 
   <!-- Text column -->
   <div class="col-md-8">
     <p>
-    The code and visualizations highlight several key issues within our data:
-    - Some schools are severely underrepresented.
-    - The number of students receiving free lunch runs the risk of autocorrelation (this is a byproduct of it being a categorical variable included in a fixed effects regression).
-    - The data is right-skewed, and the distribution looks different within each of the schools.
+      The code and visualizations highlight several key issues within our data:
+      <ul>
+        <li>Some schools are severely underrepresented.</li>
+        <li>The number of students receiving free lunch runs the risk of autocorrelation (this is a byproduct of it being a categorical variable included in a fixed effects regression).</li>
+        <li>The data is right-skewed, and the distribution looks different within each of the schools.</li>
+      </ul>
     </p>
   </div>
 </div>
