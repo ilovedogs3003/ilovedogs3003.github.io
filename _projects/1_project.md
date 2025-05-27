@@ -4,9 +4,15 @@ title: Teach for America
 description: The Importance of Adequate Research Design
 img: assets/img/tfa_pgd.png
 importance: 1
-category: work
+category: Python
 related_publications: true
+citation_url: https://www.researchgate.net/publication/292225074_The_effect_of_Teach_For_America_on_students_Findings_from_a_national_evaluation
+citation_label: Decker et al. (2004)
+code_url: https://colab.research.google.com/drive/106-ebadclMc1p4M85cKFXClv8y88y6KN?usp=sharing
+code_label: Open in Colab
 ---
+
+
 
 <h6>This project interprets a myriad of multivariate regressions and highlights the importance of understanding the data you're working with when doing so. Through upsampling and various other visualizations and analyses, this project demonstrates how adequate research design can impact conclusions befitting the data. 
 </h6>
@@ -33,7 +39,7 @@ In this specific analysis, I am trying to see the baseline relationship between 
 
 
 However, a closer inspection at the R-squared reveals a model that explains less than .1% of the variation within the data. Similarly, the F-statistic--an indicator of model strength--being relatively low highlights the inefficacy of this being a sufficient analysis. 
-<div class="row">
+<div class="row justify-content-sm-center">
     <div class="col-sm-6 col-md-4 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/tfa_brms.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
@@ -161,5 +167,3 @@ Let's take a closer look at the variables we were using.
     </div>
   </div>
 </div>
-
-
