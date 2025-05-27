@@ -4,7 +4,7 @@ title: Teach for America
 description: The Importance of Adequate Research Design
 img: assets/img/tfa_pgd.png
 importance: 1
-category: work
+category: Python
 related_publications: true
 code_url: https://colab.research.google.com/drive/106-ebadclMc1p4M85cKFXClv8y88y6KN?usp=sharing
 code_label: Open in Colab
