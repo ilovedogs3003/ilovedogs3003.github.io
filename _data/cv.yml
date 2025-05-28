@@ -11,9 +11,10 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
+    - title: Master of Arts in Quantitative Methods in the Social Sciences
+      institution: Columbia University, New York City, New York, US
+      year: 2025
       institution: University of Zurich, Zurich, Switzerland
-      year: 1905
       description:
         - Description 1.
         - Description 2.

@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <span style="color: purple;"><a href='#'>Quantitative Social Scientist</a></span> | Focused on Education Policy & Data Equity
+subtitle: "<span style='color: purple;'><a href='#'>Quantitative Social Scientist</a></span> | Focused on Education Policy & Data"
 
 profile:
   align: right
