@@ -39,7 +39,7 @@ In this specific analysis, I am trying to see the baseline relationship between 
 However, a closer inspection at the R-squared reveals a model that explains less than .1% of the variation within the data. Similarly, the F-statistic--an indicator of model strength--being relatively low highlights the inefficacy of this being a sufficient analysis. 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 col-md-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/tfa_brms.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/tfa_brms.png" title="Bivariate OLS Model" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -51,10 +51,10 @@ The following models add the number of days absent, the number of days suspended
 The only difference between the models is that the first defines the number of days suspended as a continuous variable, while the latter defines it as categorical. For susbequent analyses, I am choosing to define the number of days suspended as a categorical variable where 0 = never suspended and 1 = suspended 1 or more times. The substantive justificaiton for doing so is the belief that the number of days suspended doesn't matter, but the students being suspended at all share some form of baseline characteristics that may set them apart from other students.
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/tfa_ols_suscon.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/tfa_ols_suscon.png" title="Multivariate OLS with Suspended Days as Continuous" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/tfa_ols_suscat.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/tfa_ols_suscat.png" title="Multivariate OLS with Suspended Days as Categorical" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -69,7 +69,7 @@ The inclusion of additional variables allows us to control for their influence o
 <h4><b>Let's Visualize It:</b></h4>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/tfa_scatter.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/tfa_scatter.png" title="TFA Scatter" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 I could be verbose here about the implications of students missing more than 20 days (truancy and court involvement usually happens at around 10 days); however, what's important to understand here is that--considering the sample as a whole--there is a slight negative association between the number of absent days and end of year math scores.
@@ -77,7 +77,7 @@ I could be verbose here about the implications of students missing more than 20 
 In the context of Education Policy, it is <b>crucial</b> to understand how such relationships may differ between schools. Knowing where different resources are required allows us to better address educational disparities.
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/tfa_schoolmeans.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/tfa_schoolmeans.png" title="School Means" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -130,7 +130,7 @@ Let's take a closer look at the variables we were using:
     <div style="max-width: 150px; margin: auto;">
       {% include figure.liquid 
          path="assets/img/tfa_obs.png" 
-         title="example image" 
+         title="Observation Counts" 
          class="img-fluid rounded z-depth-1" %}
     </div>
   </div>
@@ -149,7 +149,7 @@ Let's take a closer look at the variables we were using:
 <p>In an attempt to address sampling issues while retaining the distribution of the data, we can artificially duplicate observations within each school of the schools.</p> 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/tfa_sampling.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/tfa_sampling.png" title="Bar Chart of Upsampled" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <p>While undersampling is a viable alternative, it often comes at the cost of larger standard errors and weaker predictive performance.</p>

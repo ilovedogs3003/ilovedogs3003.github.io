@@ -4,7 +4,7 @@ title: Redacted
 description: A Look at Censorship in Modern America
 img: assets/img/redacted_wordcloud.png
 redirect: https://censorship.streamlit.app/
-importance: 3
+importance: 1
 category: Python
 ---
 

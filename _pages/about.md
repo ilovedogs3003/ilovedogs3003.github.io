@@ -31,15 +31,15 @@ Through empirical methods, advocacy, and public policy, I aim to make a world wh
 <br><br><br><br><br>
 <h2>Featured Projects</h2>
 
-<div class="row row-cols-2 row-cols-md-3">
-  {% assign sorted_projects = site.projects | sort: "importance" | slice: 0,6 %}
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  {% assign sorted_projects = site.projects | sort: "importance" | slice: 0,2 %}
   {% for project in sorted_projects %}
-    {% include projects.liquid %}
+    <div class="col d-flex align-items-stretch">
+      <div class="card w-100 h-100">
+        <div class="card-body d-flex flex-column p-0 border-0 shadow-none h-100">
+          {% include projects.liquid %}
+        </div>
+      </div>
+    </div>
   {% endfor %}
 </div>
-
-<p class="mt-4">
-  <a href="{{ '/projects/' | relative_url }}" class="btn btn-outline-primary">
-    View all projects →
-  </a>
-</p>
