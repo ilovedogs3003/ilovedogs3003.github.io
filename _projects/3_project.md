@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: Redacted
+description: A Look at Censorship in Modern America
+img: assets/img/redacted_wordcloud.png
+redirect: https://censorship.streamlit.app/
 importance: 3
-category: work
+category: Python
 ---
 
 Every project has a beautiful feature showcase page.

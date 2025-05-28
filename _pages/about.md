@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "<span style='color: purple;'><a href='#'>Quantitative Social Scientist</a></span> | Focused on Education Policy & Data"
+subtitle: <a href='#'>Quantitative Social Scientist</a> | Focused on Education Policy & Data Science
 
 profile:
   align: right
@@ -28,11 +28,11 @@ latest_posts:
 Coming from a small, rural town in Colombia, I understand the impact education can have on the trajectory of one's life. Motivated by my lived experience and a desire to change the world for the better, I am passionate about addressing disparities in our education system by **bridging the gap between research and practice**.
 
 Through empirical methods, advocacy, and public policy, I aim to make a world where childen don't have to consider themselves lucky to have earned a high school or college education.
-
+<br><br><br><br><br>
 <h2>Featured Projects</h2>
 
-<div class="row row-cols-1 row-cols-md-3">
-  {% assign sorted_projects = site.projects | sort: "importance" | slice: 0,3 %}
+<div class="row row-cols-2 row-cols-md-3">
+  {% assign sorted_projects = site.projects | sort: "importance" | slice: 0,6 %}
   {% for project in sorted_projects %}
     {% include projects.liquid %}
   {% endfor %}

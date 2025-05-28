@@ -38,7 +38,7 @@ In this specific analysis, I am trying to see the baseline relationship between 
 
 However, a closer inspection at the R-squared reveals a model that explains less than .1% of the variation within the data. Similarly, the F-statistic--an indicator of model strength--being relatively low highlights the inefficacy of this being a sufficient analysis. 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-6 col-md-4 mt-3 mt-md-0">
+    <div class="col-sm-8 col-md-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/tfa_brms.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -74,7 +74,7 @@ The inclusion of additional variables allows us to control for their influence o
 </div>
 I could be verbose here about the implications of students missing more than 20 days (truancy and court involvement usually happens at around 10 days); however, what's important to understand here is that--considering the sample as a whole--there is a slight negative association between the number of absent days and end of year math scores.
 <div style="height: 4px;"></div>
-In the context of Education Policy, it is <b>crucial</b> to understand how relationships differ between schools.
+In the context of Education Policy, it is <b>crucial</b> to understand how such relationships may differ between schools. Knowing where different resources are required allows us to better address educational disparities.
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/tfa_schoolmeans.png" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -103,41 +103,46 @@ In the context of Education Policy, it is <b>crucial</b> to understand how relat
     </div>
   </div>
 </div>
-<br>
 <p>Accounting for school fixed effects (i.e., factors within each school that could influence the dependent variable), we see a model with considerably greater explanatory power. Our model now accounts for 21% of the variation within the observed scores and the F-statistic nearly doubled.</p>
 
-All things considered, the model insinuates that Teach for America teachers **do not** provide students with a statistically significant increase in their end of year math scores (<i>p</i> = 0.118).
-<br>
-<b>However, as I previously mentioned, this is an example of what NOT to do</b>
-<br>
-Let's take a closer look at the variables we were using.
+All things considered, the model insinuates that Teach for America teachers **do not** provide students with a statistically significant increase in their end of year math scores (<i>p</i> = 0.118). However, as I previously mentioned, this is an example of what <b>NOT to do.</b>
+<br><br>
+Let's take a closer look at the variables we were using:
 <div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/tfa_schooldist.png" title="example image" class="img-fluid rounded z-depth-1" %}
+  <!-- Image 1 -->
+  <div class="col-sm-6 col-md-6 mt-3 mt-md-0">
+    <div class="ratio ratio-4x3">
+      <img src="{{ 'assets/img/tfa_schooldist.png' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Distribution" style="object-fit: contain;">
     </div>
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/tfa_cormatrix.png" title="example image" class="img-fluid rounded z-depth-1" %}
+  </div>
+
+  <!-- Image 2 -->
+  <div class="col-sm-6 col-md-6 mt-3 mt-md-0">
+    <div class="ratio ratio-4x3">
+      <img src="{{ 'assets/img/tfa_cormatrix.png' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Correlation Matrix" style="object-fit: contain;">
     </div>
+  </div>
 </div>
+<br>
 <div class="row align-items-center">
   <!-- Image column -->
-  <div class="col-md-4 text-center">
-    {% include figure.liquid 
-       path="assets/img/tfa_obs.png" 
-       title="example image" 
-       class="img-fluid rounded z-depth-1 w-75" %}
+  <div class="col-md-3 text-center">
+    <div style="max-width: 150px; margin: auto;">
+      {% include figure.liquid 
+         path="assets/img/tfa_obs.png" 
+         title="example image" 
+         class="img-fluid rounded z-depth-1" %}
+    </div>
   </div>
 
   <!-- Text column -->
-  <div class="col-md-8">
-    <p>
-      The code and visualizations highlight several key issues within our data:
-      <ul>
-        <li>Some schools are severely underrepresented.</li>
-        <li>The number of students receiving free lunch runs the risk of autocorrelation (this is a byproduct of it being a categorical variable included in a fixed effects regression).</li>
-        <li>The data is right-skewed, and the distribution looks different within each of the schools.</li>
-      </ul>
-    </p>
+  <div class="col-md-9">
+    <p>The code and visualizations highlight several key issues within our data:</p>
+    <ul>
+      <li>Some schools are severely underrepresented.</li>
+      <li>The number of students receiving free lunch runs the risk of autocorrelation (this is a byproduct of it being a categorical variable included in a fixed effects regression).</li>
+      <li>The data is right-skewed and the distribution looks different within each of the schools.</li>
+    </ul>
   </div>
 </div>
 <br>
@@ -170,3 +175,30 @@ Let's take a closer look at the variables we were using.
     </div>
   </div>
 </div>
+<br>
+<h4><b>Fixed Effects Model Addressing Undersampling:</b></h4>
+<div class="row align-items-center">
+    <!-- Image column -->
+    <div class="col-md-6 d-flex justify-content-center align-items-center" style="height:100%;">
+        <div style="max-width: 400px; width: 100%;">
+            {% include figure.liquid 
+                path="assets/img/tfa_fe_ups_ols.png" 
+                title="example image" 
+                class="img-fluid rounded z-depth-1 w-100" %}
+        </div>
+    </div>
+    <!-- Text column -->
+    <div class="col-md-6">
+        <ul>
+            <li>Students with Teach for America teachers, after controlling for school fixed effects, saw an average increase of 2.82 points in their end of year math scores. These effects were highly variable, ranging from -9.54 at school 204 to 24.55 at school 614!</li>
+            <li>Although not significant, students who were suspended, on average, scored -0.79 points lower on their math scores (<i>p</i> = 0.65).</li>
+            <li>Each day missed was associated with a -0.35 decrease in student math scores, highlighting the importance of addressing truancy issues in schools (<i>p</i> &lt; .001).</li>
+            <li>The methods described above doubled the F-statistic and slightly increased the variation in the data explained by our model (R-squared = 24%).</li>
+        </ul>
+        <br>
+        <p>
+            While this isn't a comprehensive look into the specifics of the Teach for America program or the assumptions behind multivariate regressions, it demonstrates the importance of adequate research design. <b>The questions we ask and the answers we derive are only as adequate as our understanding of the data.</b>
+        </p>
+    </div>
+</div>
+
