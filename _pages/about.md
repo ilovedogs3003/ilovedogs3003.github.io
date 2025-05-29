@@ -31,8 +31,8 @@ Through empirical methods, advocacy, and public policy, I aim to make a world wh
 <br><br><br><br><br>
 <h2>Featured Projects</h2>
 
-<div class="row row-cols-1 row-cols-md-2 g-4">
-  {% assign sorted_projects = site.projects | sort: "importance" | slice: 0,2 %}
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  {% assign sorted_projects = site.projects | sort: "importance" | slice: 0,3 %}
   {% for project in sorted_projects %}
     <div class="col d-flex align-items-stretch">
       <div class="card w-100 h-100">
