@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of different projects, both personal and professional.
+description: A growing collection of different personal, academic, and personal projects.
 nav: true
 nav_order: 3
 display_categories: [Python, Stata]
