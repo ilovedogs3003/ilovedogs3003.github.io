@@ -43,16 +43,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-currently-developing-formating-and-cleaning-the-following-scholarship-web-scraper-the-effects-of-affirmative-action-bans-on-higher-education-enrollment-comprehensive-representative-voting-track-record-20-labs-from-my-master-39-s-program",
+          title: 'Currently developing, formating, and cleaning the following Scholarship Web Scraper The Effects of...',
           description: "",
           section: "News",},{id: "projects-teach-for-america",
           title: 'Teach for America',
@@ -89,8 +81,8 @@ ninja.data = [{
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
-            },},{id: "projects-general-social-survey",
-          title: 'General Social Survey',
+            },},{id: "projects-education-by-region",
+          title: 'Education by Region',
           description: "Educational Modeling with Longitudinal Data",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
