@@ -149,7 +149,7 @@ Let's take a closer look at the variables we were using:
 <p>In an attempt to address sampling issues while retaining the distribution of the data, we can artificially duplicate observations within each school of the schools.</p> 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/tfa_sampling.png" title="Bar Chart of Upsampled" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/tfa_sampling.png" title="Bar Chart of Samples" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <p>While undersampling is a viable alternative, it often comes at the cost of larger standard errors and weaker predictive performance.</p>
@@ -183,7 +183,7 @@ Let's take a closer look at the variables we were using:
         <div style="max-width: 400px; width: 100%;">
             {% include figure.liquid 
                 path="assets/img/tfa_fe_ups_ols.png" 
-                title="example image" 
+                title="FE Model Upsampled Summary" 
                 class="img-fluid rounded z-depth-1 w-100" %}
         </div>
     </div>
