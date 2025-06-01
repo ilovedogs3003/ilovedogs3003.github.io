@@ -90,7 +90,7 @@ will produce the following image:
     </div>
 </div>
 <p>
-    Considering each customization is rather reiterative and primarily achieved through an additional line of code, I won't model each of the components. However, in honor of the handle for this website—I hope to one day own a dog—I will leave you with a playful iteration of the QR code you scanned:
+    Considering each customization is rather reiterative and achieved through an additional line of code, I won't model each of the components. However, in honor of the handle for this website, I will leave you with a playful iteration of the QR code you scanned:
 </p>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">
