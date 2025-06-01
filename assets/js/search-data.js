@@ -46,51 +46,26 @@ ninja.data = [{
             },},{id: "news-currently-developing-formating-and-cleaning-the-following-scholarship-web-scraper-the-effects-of-affirmative-action-bans-on-higher-education-enrollment-comprehensive-representative-voting-track-record-20-labs-from-my-master-39-s-program",
           title: 'Currently developing, formating, and cleaning the following Scholarship Web Scraper The Effects of...',
           description: "",
-          section: "News",},{id: "projects-teach-for-america",
+          section: "News",},{id: "projects-qr-code-generation",
+          title: 'QR Code Generation',
+          description: "No websites, just Python!",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10_project/";
+            },},{id: "projects-teach-for-america",
           title: 'Teach for America',
           description: "The Importance of Adequate Research Design",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
             },},{id: "projects-redacted",
           title: 'Redacted',
           description: "A Look at Censorship in Modern America",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
             },},{id: "projects-education-by-region",
           title: 'Education by Region',
           description: "Educational Modeling with Longitudinal Data",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{
         id: 'social-email',
         title: 'email',
