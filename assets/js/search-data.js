@@ -51,11 +51,6 @@ ninja.data = [{
           description: "No websites, just Python!",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_project/";
-            },},{id: "projects-education-by-borough",
-          title: 'Education by Borough',
-          description: "Graduation Rates &amp; Geospatial Analysis",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/11_project/";
             },},{id: "projects-teach-for-america",
           title: 'Teach for America',
           description: "The Importance of Adequate Research Design",
