@@ -9,9 +9,7 @@ related_publications: true
 code_url: https://colab.research.google.com/drive/106-ebadclMc1p4M85cKFXClv8y88y6KN?usp=sharing
 code_label: Open in Colab
 ---
-
-
-
+<hr>
 <h6>This project interprets a myriad of multivariate regressions and highlights the importance of understanding the data you're working with when doing so. Through upsampling and various other visualizations and analyses, this project demonstrates how adequate research design can impact conclusions befitting the data. 
 </h6>
 <p>

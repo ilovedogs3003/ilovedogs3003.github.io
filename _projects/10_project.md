@@ -3,12 +3,13 @@ layout: page
 title: QR Code Generation
 description: No websites, just Python!
 img: assets/img/animated_qrcode.gif
-importance: 3
+importance: 5
 category: Personal
 related_publications: true
 code_url: https://colab.research.google.com/drive/1YJWbboQpqRUVI2qyx852cIaqJ9feHG_k?usp=sharing
 code_label: Open in Colab
 ---
+<hr>
 <p>
     This is a rather short snippet of how to use Python to create your own QR Codes. While the codebook provided is relatively simple and it will not run unless you import it into a different environment, you can follow a more complex guide by
         <i>
