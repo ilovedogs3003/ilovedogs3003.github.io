@@ -43,8 +43,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-currently-developing-formating-and-cleaning-the-following-scholarship-web-scraper-the-effects-of-affirmative-action-bans-on-higher-education-enrollment-comprehensive-representative-voting-track-record-20-labs-from-my-master-39-s-program",
-          title: 'Currently developing, formating, and cleaning the following Scholarship Web Scraper The Effects of...',
+            },},{id: "news-currently-developing-formatting-and-cleaning-the-following-scholarship-web-scraper-the-effects-of-affirmative-action-bans-on-higher-education-enrollment-comprehensive-representative-voting-track-record-20-labs-from-my-master-39-s-program",
+          title: 'Currently developing, formatting, and cleaning the following Scholarship Web Scraper The Effects of...',
           description: "",
           section: "News",},{id: "projects-qr-code-generation",
           title: 'QR Code Generation',
