@@ -5,7 +5,7 @@ permalink: /projects/
 description: A growing collection of different personal, academic, and personal projects.
 nav: true
 nav_order: 3
-display_categories: [Python, Stata, Personal]
+display_categories: [Python, Personal, Stata]
 horizontal: false
 ---
 

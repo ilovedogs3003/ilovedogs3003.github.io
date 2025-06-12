@@ -28,7 +28,10 @@ latest_posts:
 Coming from a small, rural town in Colombia, I understand the impact education can have on the trajectory of one's life. Motivated by my lived experience and a desire to change the world for the better, I am passionate about addressing disparities in our education system by **bridging the gap between research and practice**.
 
 Through empirical methods, advocacy, and public policy, I aim to make a world where childen don't have to consider themselves lucky to have earned a high school or college education.
-<br><br><br><br><br>
+<p>
+  This portfolio is primarily tailored towards Education Policy. At a baseline, however, it also shows the strengths and versatility of data science.
+</p>
+<br><br><br>
 <h2>Featured Projects</h2>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">

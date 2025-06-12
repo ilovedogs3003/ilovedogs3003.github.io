@@ -4,7 +4,7 @@ title: "<del>Redacted</del>"
 description: A Look at Censorship in Modern America
 img: assets/img/redacted_wordcloud.png
 redirect: https://censorship.streamlit.app/
-importance: 2
+importance: 4
 category: Python
 ---
 <hr>

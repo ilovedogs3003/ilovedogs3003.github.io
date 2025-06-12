@@ -3,7 +3,7 @@ layout: page
 title: Education by Borough
 description: Geospatial Analysis and Modeling
 img: assets/img/edxb_bivariate.png
-importance: 6
+importance: 2
 category: Python
 related_publications: true
 code_url: https://colab.research.google.com/drive/1YJWbboQpqRUVI2qyx852cIaqJ9feHG_k?usp=sharing

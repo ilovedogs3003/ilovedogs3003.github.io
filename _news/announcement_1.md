@@ -1,12 +1,12 @@
 ---
 layout: post
-date: 2025-06-30 15:59:00-0400
+date: 2025-07-01
 inline: true
 related_posts: false
 ---
 <br>
 <p>
-    Currently developing, formating, and cleaning the following
+    Currently developing, formatting, and cleaning the following
     <ul>
         <li>Scholarship Web Scraper</li>
         <li>The Effects of Affirmative Action Bans on Higher Education Enrollment</li>

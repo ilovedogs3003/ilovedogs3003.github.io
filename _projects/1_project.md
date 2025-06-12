@@ -21,14 +21,14 @@ code_label: Open in Colab
       </a>
     </i>
   </small>
-  given to me in Dr. Aparna Anand's <b>EDPA 6002: Quantitative Methods for Evaluating Education Policies and Programs</b> course. While I still have access to the data, I do not have access to the data dictionary. This means that, within the dataframe, there are a lot of variables that I do not know i) how they are defined and ii) how the data was collected. Thus, the purpose of this project is <b> not to make any declarative statements, but demosntrate some of the things I've learned </b>
+  given to me in Dr. Aparna Anand's <b>EDPA 6002: Quantitative Methods for Evaluating Education Policies and Programs</b> course. While I still have access to the data, I do not have access to the data dictionary. This means that, within the dataframe, there are a lot of variables that I do not know i) how they are defined and ii) how the data was collected. Thus, the purpose of this project is <b> not to make any declarative statements, but demosntrate some of the things I have learned </b>
 </p>
 <br>
 This project and data specifically focuses on the impact that Teach for America teachers have on student outcomes.
 
 
 <h4><b>Multivariate Regressions</b></h4>
-The following is a perfect example of what <b>not to do</b>. You should not run a series of regression models <b>without checking assumptions</b> or properly understanding the distribution of your data and how that may <i>influence</i> or <b>bias</b> the outcomes
+The following is a perfect example of what <b>not to do</b>. You should not run a series of regression models <b>without checking assumptions</b> or properly understanding the distribution of your data and how that may <i>influence</i> or <b>bias</b> the outcomes.
 
 
 In this specific analysis, I am trying to see the baseline relationship between end of year math scores and treatment (i.e., whether the student had a Teach for America teacher). At a baseline, a less knowledgeable social scientist <i>may</i> feel compelled to tell you that--although the results are not significant--they indicate the potential of fruitful results. Significance not withstanding, those who received treatment scored **1.38 points higher, on average, on their end of year math scores**. 
@@ -42,11 +42,11 @@ However, a closer inspection at the R-squared reveals a model that explains less
 </div>
 
 
-<h5><b>Now Let's Add More Variables:</b></h5>
+<h5><b>Adding More Variables:</b></h5>
 The following models add the number of days absent, the number of days suspended, whether the student receives free lunch (as a proxy for socioeconomic status), and the number of students.
 
 
-The only difference between the models is that the first defines the number of days suspended as a continuous variable, while the latter defines it as categorical. For susbequent analyses, I am choosing to define the number of days suspended as a categorical variable where 0 = never suspended and 1 = suspended 1 or more times. The substantive justificaiton for doing so is the belief that the number of days suspended doesn't matter, but the students being suspended at all share some form of baseline characteristics that may set them apart from other students.
+The only difference between the models is that the first defines the number of days suspended as a continuous variable, while the latter defines it as categorical. For susbequent analyses, I am choosing to define the number of days suspended as a categorical variable where 0 = never suspended and 1 = suspended 1 or more times. The substantive justification for doing so is the belief that the number of days suspended does not matter, but the students being suspended at all share some form of baseline characteristics that may set them apart from other students.
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/tfa_ols_suscon.png" title="Multivariate OLS with Suspended Days as Continuous" class="img-fluid rounded z-depth-1" %}
@@ -56,7 +56,7 @@ The only difference between the models is that the first defines the number of d
     </div>
 </div>
 
-<p>The first model, where the number of days suspended is defined as categorical variable, has an R-squared and F-statistic larger than the second model where it's defined as a continuous variable(<i>F</i> = 13.76 v. 12.44; R-squared = .039 v. .035). This gives the aforementioned justification some credence.</p>
+<p>The first model, where the number of days suspended is defined as categorical variable, has an R-squared and F-statistic larger than the second model where it is defined as a continuous variable(<i>F</i> = 13.76 v. 12.44; R-squared = .039 v. .035). This gives the aforementioned justification some credence.</p>
 <div style="height: 4px;"></div>
 <h4><b>Unconditional Model v. First Model</b></h4>
 The inclusion of additional variables allows us to control for their influence over the dependent variable. With these variables incorporated, we saw a considerable increase in our model's efficacy. Forgoing discussion of model parameters, a noteworthy increase is the estimated influence of treatment on math scores: albeit still insignificant, the unconditional model estimated Teach for America teachers to increase math scores, on average, by 1.37 points while the first model estimated that influence to be 1.51.
@@ -64,13 +64,13 @@ The inclusion of additional variables allows us to control for their influence o
 
 <h6><i>It is important to note that the proper way of constructing a taxonomy of models is to include each additional variable one at a time. From there, compare the impact that each variable has on the regression results to better understand their explanatory power.</i></h6>
 <br>
-<h4><b>Let's Visualize It:</b></h4>
+<h4><b>Visualizing It:</b></h4>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/tfa_scatter.png" title="TFA Scatter" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-I could be verbose here about the implications of students missing more than 20 days (truancy and court involvement usually happens at around 10 days); however, what's important to understand here is that--considering the sample as a whole--there is a slight negative association between the number of absent days and end of year math scores.
+I could be verbose here about the implications of students missing more than 20 days (truancy and court involvement usually happens at around 10 days); however, what is important to understand here is that--considering the sample as a whole--there is a slight negative association between the number of absent days and end of year math scores.
 <div style="height: 4px;"></div>
 In the context of Education Policy, it is <b>crucial</b> to understand how such relationships may differ between schools. Knowing where different resources are required allows us to better address educational disparities.
 <div class="row">
@@ -105,7 +105,7 @@ In the context of Education Policy, it is <b>crucial</b> to understand how such 
 
 All things considered, the model insinuates that Teach for America teachers **do not** provide students with a statistically significant increase in their end of year math scores (<i>p</i> = 0.118). However, as I previously mentioned, this is an example of what <b>NOT to do.</b>
 <br><br>
-Let's take a closer look at the variables we were using:
+Let us take a closer look at the variables we were using:
 <div class="row justify-content-sm-center">
   <!-- Image 1 -->
   <div class="col-sm-6 col-md-6 mt-3 mt-md-0">
@@ -195,7 +195,7 @@ Let's take a closer look at the variables we were using:
         </ul>
         <br>
         <p>
-            While this isn't a comprehensive look into the specifics of the Teach for America program or the assumptions behind multivariate regressions, it demonstrates the importance of adequate research design. <b>The questions we ask and the answers we derive are only as adequate as our understanding of the data.</b>
+            While this is not a comprehensive look into the specifics of the Teach for America program or the assumptions behind multivariate regressions, it demonstrates the importance of adequate research design. <b>The questions we ask and the answers we derive are only as adequate as our understanding of the data.</b>
         </p>
     </div>
 </div>
