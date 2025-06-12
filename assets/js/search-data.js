@@ -66,6 +66,11 @@ ninja.data = [{
           description: "Educational Modeling with Longitudinal Data",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
+            },},{id: "projects-education-by-borough",
+          title: 'Education by Borough',
+          description: "Geospatial Analysis and Modeling",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/mapping_education/";
             },},{
         id: 'social-email',
         title: 'email',
