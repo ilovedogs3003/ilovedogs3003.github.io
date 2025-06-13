@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of different personal, academic, and personal projects.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -71,6 +71,11 @@ ninja.data = [{
           description: "Geospatial Analysis and Modeling",
           section: "Projects",handler: () => {
               window.location.href = "/projects/mapping_education/";
+            },},{id: "projects-supervised-machine-learning",
+          title: 'Supervised Machine Learning',
+          description: "KNN, OLS, Ridge and Lasso Regressions in Educational Modeling",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ml_lab2/";
             },},{
         id: 'social-email',
         title: 'email',
