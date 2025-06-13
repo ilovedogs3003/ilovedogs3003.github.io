@@ -6,7 +6,7 @@ img: assets/img/ml2_univariate_pairplot.png
 importance: 3
 category: Python
 related_publications: true
-code_url: https://colab.research.google.com/drive/1-1-iBaIiSke0XXZ4rbwetS5zAmVokZ-p?usp=sharing
+code_url: https://colab.research.google.com/drive/1pYVRPCQSI53RvCviySlPN0xtmlyzHAY6?usp=sharing
 code_label: Open in Colab
 ---
 <hr>
