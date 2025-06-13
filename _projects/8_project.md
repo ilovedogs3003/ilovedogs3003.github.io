@@ -3,7 +3,7 @@ layout: page
 title: Education by Region
 description: Educational Modeling with Longitudinal Data
 img: assets/img/gss_all_reg_ed.png
-importance: 3
+importance: 5
 category: Python
 related_publications: true
 code_url: https://drive.google.com/file/d/1_F1ssjQa_4PZLKqFrf9S5aYKSt7SqJ6I/view?usp=sharing
@@ -37,7 +37,7 @@ The primary purpose of this lab was to assess the changes that occurred througho
             <li>Income16: Categorical, perceived income in comparison to the average when the respondent was 16</li>
         </ul>
 </p>
-<p>The linked Jupyter Notebook provides a more detailed overview of the data cleaning and handling methods. One particular component that's a bit nebulous is how ```reg_broad_simp``` is defined and used, as that's just my personal file of customized functions.</p>
+<p>The linked Jupyter Notebook provides a more detailed overview of the data cleaning and handling methods. One particular component that is a bit nebulous is how ```reg_broad_simp``` is defined and used, as that is just my personal file of customized functions.</p>
 <details>
   <summary>You can click here to see how the <code>reg_broad_simp</code> function operates</summary>
   <pre><code>
@@ -124,7 +124,7 @@ This code visualizes how the average years of education reported by respondents 
     </div>
   </div>
 </div>
-<h6>Let's Break it Down by Region:</h6>
+<h6>Breaking it Down by Region:</h6>
 <div class="row justify-content-sm-center">
   <!-- Image 1 -->
   <div class="col-sm-6 col-md-6 mt-3 mt-md-0">
@@ -325,7 +325,7 @@ YC = Same set up except year is now centered at 1972 and continuous
 
 <b>Recommendation for Cross-Sectional Longitudinal Data</b>
 <p>
-    When working with repeated cross-sections or panel data, it's generally best to treat year as a <strong>categorical variable</strong>. This allows you to control for year-specific effects and avoids making restrictive assumptions about the shape of time trends.
+    When working with repeated cross-sections or panel data, it is generally best to treat year as a <strong>categorical variable</strong>. This allows you to control for year-specific effects and avoids making restrictive assumptions about the shape of time trends.
 </p>
 <p>
     However, if your dataset spans few years and you believe the effect of time is linear, a continuous specification may suffice.

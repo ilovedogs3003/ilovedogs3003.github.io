@@ -3,7 +3,7 @@ layout: page
 title: QR Code Generation
 description: No websites, just Python!
 img: assets/img/animated_qrcode.gif
-importance: 5
+importance: 6
 category: Personal
 related_publications: true
 code_url: https://colab.research.google.com/drive/1YJWbboQpqRUVI2qyx852cIaqJ9feHG_k?usp=sharing
@@ -91,7 +91,7 @@ will produce the following image:
     </div>
 </div>
 <p>
-    Considering each customization is rather reiterative and achieved through an additional line of code, I won't model each of the components. However, in honor of the handle for this website, I will leave you with a playful iteration of the QR code you scanned:
+    Considering each customization is rather reiterative and achieved through an additional line of code, I will not model each of the components. However, in honor of the handle for this website, I will leave you with a playful iteration of the QR code you scanned:
 </p>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">

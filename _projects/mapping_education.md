@@ -6,7 +6,7 @@ img: assets/img/edxb_bivariate.png
 importance: 2
 category: Python
 related_publications: true
-code_url: https://colab.research.google.com/drive/1YJWbboQpqRUVI2qyx852cIaqJ9feHG_k?usp=sharing
+code_url: https://colab.research.google.com/drive/1-1-iBaIiSke0XXZ4rbwetS5zAmVokZ-p?usp=sharing
 code_label: Open in Colab
 ---
 <hr>
@@ -124,4 +124,5 @@ document.getElementById('levelSelect').addEventListener('change', function() {
 <iframe src="https://ilovedogs3003.github.io/lfs/maps/bivariate_dems.html"
         width="100%" height="600" style="border:none;" loading="eager"></iframe>
 <h4>Geospatial Analysis</h4>
-<li>This will be added soon; it is simply a look into spatial autocorrelation and the variables that best predict dropout rates!</li>
+<li>This will be added soon: it is simply a look into spatial autocorrelation and the variables that best predict dropout rates!</li>
+<li> Formatting HTML takes a surpringly long amount of time </li>

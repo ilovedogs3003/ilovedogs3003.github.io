@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Quantitative Social Scientist</a> | Focused on Education Policy & Data Science
+subtitle: '<span style="color: purple;">Quantitative Social Scientist</span> &#124; Focused on Education Policy &amp; Data Science'
 
 profile:
   align: right
@@ -25,13 +25,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Coming from a small, rural town in Colombia, I understand the impact education can have on the trajectory of one's life. Motivated by my lived experience and a desire to change the world for the better, I am passionate about addressing disparities in our education system by **bridging the gap between research and practice**.
-
-Through empirical methods, advocacy, and public policy, I aim to make a world where childen don't have to consider themselves lucky to have earned a high school or college education.
+Coming from a small town in rural Colombia, I understand the impact education can have on the trajectory of one's life. Motivated by my lived experience and a drive to create meaningful change, I am passionate about addressing disparities in our education system by **bridging the gap between research and practice**.
 <p>
-  This portfolio is primarily tailored towards Education Policy. At a baseline, however, it also shows the strengths and versatility of data science.
+  This portfolio is rooted in education policy, but its core principles—rigorous analysis, thoughtful design, and evidence-based insight—extend beyond that. These projects showcase the power and versatility of strong data science, regardless of the domain.
 </p>
-<br><br><br>
+<br><br><br><br>
 <h2>Featured Projects</h2>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
