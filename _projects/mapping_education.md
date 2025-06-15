@@ -11,7 +11,7 @@ code_label: Open in Colab
 ---
 <hr>
 <p>The purpose of this project was to use open access data to visualize educational patterns in NYC graduation rates. Observations from the visualizations were subsequently tested using three different types of statistical analyses.</p>
-<h4>Contextualizing Education in NYC</h4>
+<h4 style="color:rgb(224, 10, 10);">Contextualizing Education in NYC</h4>
 <p>
     New York City hosts the largest public school system in the United States, serving over one million students across more than 1,800 schools. Yet this immense scale is accompanied by deeply entrenched educational disparities shaped by race, income, neighborhood, and historical patterns of segregation. For further reading,
          <i>
@@ -24,7 +24,7 @@ code_label: Open in Colab
     You can click on the provided Colab Notebook to access the entirety of the code and the data cleaning process. As someone invested in the replicability of research, you can also access the original datasets below.
 </p>
 
-#### Shapefiles
+<h5 style="color:rgb(224, 10, 10);">Shapefiles</h5>
 
 <ul>
     <li>
@@ -39,7 +39,7 @@ code_label: Open in Colab
     </li>
 </ul>
 
-#### School Level Data
+<h5 style="color:rgb(224, 10, 10);"> School Level Data </h5>
 
 <ul>
     <li>
@@ -59,14 +59,15 @@ code_label: Open in Colab
     </li>
 </ul>
 <p>
-    There was a lot of other data processed, however, it they were not used in the final report due to no dictionary of the variables being readily accessible. This is important to know i) how variables are being defined, ii) what they are actually measuring, and iii) how they measure these things. 
+    There was a lot of other data processed, however, they were not used in the final report due to no dictionary of the variables being readily accessible. This is important to know i) how variables are being defined, ii) what they are actually measuring, and iii) how they measure these things. 
 </p>
 
 
 <p>
-    Graduation rates vary widely across boroughs and districts, often reflecting broader inequalities in access to resources, experienced educators, and academic support. <b style="color:red;">This project seeks to visualize such patterns and examine their statistical underpinnings to better inform policy and community-driven solutions</b>.
+    Graduation rates vary widely across boroughs and districts, often reflecting broader inequalities in access to resources, experienced educators, and academic support. <b>This project seeks to visualize such patterns and examine their statistical underpinnings to better inform policy and community-driven solutions</b>.
 </p>
-<p><h5>Let's Take a Look at Each of the Boroughs, the School Districts Within Them, and Their Corresponding Dropout Rates</h5></p>
+<p>Let's take a look at each of the boroughs, the school districts within them, and their corresponding dropout rates</p>
+
 <div class="mb-3">
     <label for="levelSelect" class="form-label"><strong>View Level:</strong></label>
     <select id="levelSelect" class="form-select" style="max-width: 250px;">
@@ -101,28 +102,36 @@ document.getElementById('levelSelect').addEventListener('change', function() {
     }
 });
 </script>
-<h4>Interpretation</h4>
+<h4 style="color:rgb(224, 10, 10);">Interpretation</h4> 
 <p>
-    Simply based on visual inspections, each of the maps paints a different picture of the educational landscape in New York City.
+    Based on simple visual inspections, each of the maps paints a different picture of the educational landscape in New York City.
+</p>
+<p>
+    <b>Borough Level:</b> The first map presents average dropout rates aggregated at the borough level. It reveals striking disparities: The Bronx and Brooklyn exhibit the highest average dropout rates, with deep red shading signaling values above 30%, while Manhattan and Staten Island show comparatively lower dropout rates. However, this broader view can obscure within-borough variation and may overgeneralize the challenges each borough faces.
 </p>
 
 <p>
-    <b>Borough Level</b><br>
-    The first map presents average dropout rates aggregated at the borough level. It reveals striking disparities: The Bronx and Brooklyn exhibit the highest average dropout rates, with deep red shading signaling values above 30%, while Manhattan and Staten Island show comparatively lower dropout rates. However, this broader view can obscure within-borough variation and may overgeneralize the challenges each borough faces.
-</p>
-
-<p>
-    <b>School Zone Level</b><br>
-    The second map disaggregates data by individual school zones, offering a more granular and nuanced picture. Within both Brooklyn and the Bronx, we observe pockets of extremely high dropout rates concentrated in specific zones, while neighboring zones fare better. This localized perspective highlights the importance of looking beyond borough-level summaries to identify educational inequities that persist within smaller geographic areas.
+    <b>School Zone Level:</b><br> The second map disaggregates data by individual school zones, offering a more granular and nuanced picture. Within both Brooklyn and the Bronx, we observe pockets of extremely high dropout rates concentrated in specific zones, while neighboring zones fare better. This localized perspective highlights the importance of looking beyond borough-level summaries to identify educational inequities that persist within smaller geographic areas.
 </p>
 
 <p>
     Together, these visualizations highlight the need for targeted, zone-specific interventions, as citywide or borough-wide policies may miss the communities most at risk.
 </p>
 
+<h4 style="color:rgb(224, 10, 10);">Bivariate Choropleth Maps</h4>
+<p>Bivariate choropleth maps are thematic maps that display the spatial relationship between two variables at once. By blending two color scales, these maps help identify areas where high or low values of both variables intersect. This allows for a more nuanced understanding of overlapping inequalities than single-variable maps alone.</p>
 
 <iframe src="https://ilovedogs3003.github.io/lfs/maps/bivariate_dems.html"
         width="100%" height="600" style="border:none;" loading="eager"></iframe>
-<h4>Geospatial Analysis</h4>
+
+<h4 style="color:rgb(224, 10, 10);">Geospatial Analysis</h4>
 <li>This will be added soon: it is simply a look into spatial autocorrelation and the variables that best predict dropout rates!</li>
 <li> Formatting HTML takes a surpringly long amount of time </li>
+
+<!--
+<p>
+    The map aboves depicts the relationship between the racial composition of a school and the dropout rates. It is important to not that the scale for the percent of White students was reversed to make the map more intuitive (i.e., lighter colors signals a higher % of white students). In it we see the following:
+        <li>Despite brooklyn demonstrating some of the highest dropout rates, we see how those rates are congregated around districts with very low percent of white students.</li>
+        <li></li>
+-->
+
