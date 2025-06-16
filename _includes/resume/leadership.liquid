@@ -6,18 +6,26 @@
         <tbody>
           <tr>
             <td class="list-group-category" colspan="2">
-              {{ content.awarder }}
+              {{ content.organization }}
             </td>
           </tr>
           <tr>
             <td></td>
             <td class="list-group-name">
-              <b>{{ content.title }}</b><br>
-              {% if content.date %}
-                <small>{{ content.date | date: "%b %Y" }}</small>
-              {% endif %}
+              <b>{{ content.position }}</b><br>
+              <small>
+                {{ content.startDate | date: "%b %Y" }} – 
+                {{ content.endDate | date: "%b %Y" }}
+              </small>
               {% if content.summary %}
                 <p class="mt-1">{{ content.summary }}</p>
+              {% endif %}
+              {% if content.highlights %}
+                <ul class="mt-1">
+                  {% for point in content.highlights %}
+                    <li>{{ point }}</li>
+                  {% endfor %}
+                </ul>
               {% endif %}
               {% if content.url %}
                 <a href="{{ content.url }}" target="_blank" class="btn btn-sm btn-outline-secondary mt-2">
@@ -31,4 +39,6 @@
     </div>
   {% endfor %}
 </div>
+
+
 

@@ -1,34 +1,22 @@
-{% assign volunteer = data[1] | sort: 'startDate' | reverse %}
-{% for content in volunteer %}
+{% assign entries = data[1] %}
+{% for content in entries %}
   <div class="item mb-3">
-    <h6 class="mb-1 font-weight-bold">
-      {% if content.url %}
-        <a href="{{ content.url }}">{{ content.position }}</a>
-      {% else %}
-        {{ content.position }}
-      {% endif %}
-    </h6>
-
+    <h6 class="mb-1"><strong>{{ content.position }}</strong></h6>
     <div class="d-flex justify-content-between align-items-center mb-1">
-      <span class="text-muted" style="white-space: nowrap;">
-        {{ content.organization }}
-      </span>
+      <span class="text-muted" style="white-space: nowrap;">{{ content.organization }}</span>
       <span class="text-muted" style="white-space: nowrap;">
         {{ content.startDate | date: "%b %Y" }} – {{ content.endDate | date: "%b %Y" }}
       </span>
     </div>
-
     {% if content.summary %}
       <p class="mb-1">{{ content.summary }}</p>
     {% endif %}
-
     {% if content.highlights %}
       <ul class="mb-2">
-        {% for item in content.highlights %}
-          <li>{{ item }}</li>
+        {% for point in content.highlights %}
+          <li>{{ point }}</li>
         {% endfor %}
       </ul>
     {% endif %}
   </div>
 {% endfor %}
-

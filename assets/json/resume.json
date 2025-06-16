@@ -3,8 +3,7 @@
     {
       "institution": "Columbia University",
       "location": "New York, NY",
-      "studyType": "Master of Arts",
-      "area": "Quantitative Methods in the Social Sciences",
+      "studyType": "Master of Arts in Quantitative Methods",
       "startDate": "Aug 2024",
       "endDate":"May 2025",
       "courses":["GIS and Spatial Data Analysis, Time Series & Panel Data, Machine Learning, Natural Language Processing, Quantitative Methods for Educational Policy"]
@@ -12,13 +11,209 @@
     {
       "institution": "Lafayette College",
       "location": "Easton, PA",
-      "studyType": "Bachelor of Science",
+      "studyType": "Bachelor of Science in Psychology",
       "startDate":"Aug 2019",
       "endDate":"May 2023",
       "courses":"Independent Study, Thesis, Engineering & Human Psychology, Quantitative Psychology I & II, Design Methods"
     }
   ],
-    "awards": [
+  "work": [
+    {
+      "name": "AmeriCorps, UNC-Chapel Hill",
+      "position": "College Advisor",
+      "startDate": "2023-07-01",
+      "endDate": "2024-06-01",
+      "summary": "Guided over 200 seniors through the college application process, including FAFSA completion, application tracking, and scholarship research.",
+      "highlights": [
+        "Conducted over 600 one-on-one student meetings",
+        "Compiled a list of 200+ scholarships",
+        "Organized college readiness events for students, parents, and teachers"
+      ]
+    },
+    {
+      "name": "Lafayette College",
+      "position": "Psych 110 Lab Assistant",
+      "startDate": "2022-08-01",
+      "endDate": "2023-05-01",
+      "summary": "Supported introductory psychology lab instruction by providing academic feedback and guidance.",
+      "highlights": [
+        "Graded lab assignments and presentations for 20 students each semester",
+        "Held office hours and guided students through their research projects"
+      ]
+    },
+    {
+      "name": "Lafayette College",
+      "position": "Physiology II Lab Assistant",
+      "startDate": "2022-08-01",
+      "endDate": "2022-12-01",
+      "summary": "Facilitated lab experiments in neuroscience and biofeedback, including procedures involving rats.",
+      "highlights": [
+        "Helped develop lab procedures and EEG/GSR stimulus measures",
+        "Trained, nurtured, and performed surgery on rats"
+      ]
+    },
+    {
+      "name": "Lafayette College - America Reads",
+      "position": "Tutor",
+      "startDate": "2019-09-01",
+      "endDate": "2021-12-01",
+      "summary": "Provided in-classroom and after-school tutoring to assist students with their academic progress.",
+      "highlights": [
+        "Supported teachers with lesson plans and classroom assistance",
+        "Provided personalized feedback to students based on their academic needs"
+      ]
+    },
+    {
+      "name": "Lafayette College",
+      "position": "Conversation Partner",
+      "startDate": "2020-08-01",
+      "endDate": "2021-05-01",
+      "summary": "Tutored college students in Spanish language skills through conversation practice and educational presentations.",
+      "highlights": [
+        "Met weekly with 20 students for conversational Spanish tutoring",
+        "Created educational materials aligned with course content"
+      ]
+    },
+    {
+      "name": "Breakthrough, University of Texas",
+      "position": "Teaching Fellow",
+      "startDate": "2020-06-01",
+      "endDate": "2020-08-01",
+      "summary": "Led a virtual classroom for rising 9th graders in an intensive summer enrichment program.",
+      "highlights": [
+        "Designed and taught curriculum covering the foundations of psychology",
+        "Facilitated full-time instruction five days a week"
+      ]
+    }
+  ],
+  "research": [
+    {
+      "position": "Honors Thesis Student",
+      "organization": "Bias Lab, Lafayette College",
+      "startDate": "2022-08-01",
+      "endDate": "2023-05-01",
+      "summary": "Proposed and led a study examining social dominance orientation and self-other comparisons among Greek life members.",
+      "highlights": [
+        "Reviewed relevant literature and developed study protocol",
+        "Collected and analyzed data on over 100 participants using JASP, Excel, and Qualtrics"
+      ]
+    },
+    {
+      "position": "Summer Intern",
+      "organization": "Infant & Child Lab, Temple University",
+      "startDate": "2022-06-01",
+      "endDate": "2022-08-01",
+      "summary": "Researched the role of play-based learning in low-income communities through observational data.",
+      "highlights": [
+        "Conducted literature reviews on playful learning",
+        "Collected data in public spaces including play streets"
+      ]
+    },
+    {
+      "position": "Research Assistant",
+      "organization": "Bias Lab, Lafayette College",
+      "startDate": "2021-08-01",
+      "endDate": "2022-05-01",
+      "summary": "Contributed to a large-scale replication study on stereotype threat.",
+      "highlights": [
+        "Reviewed literature on stereotype threat",
+        "Assisted with data collection and initial analysis"
+      ]
+    },
+    {
+      "position": "Neuro Independent Researcher",
+      "organization": "Stawicki Lab, Lafayette College",
+      "startDate": "2021-08-01",
+      "endDate": "2021-12-01",
+      "summary": "Investigated biochemical solutions for ototoxicity-induced hearing loss.",
+      "highlights": [
+        "Created a literature review on antioxidant-based mitigation strategies",
+        "Focused on heavy metal toxicity and Reduced Oxygen Species"
+      ]
+    },
+    {
+      "position": "Summer Research Intern (SUIP)",
+      "organization": "University of Pennsylvania",
+      "startDate": "2021-06-01",
+      "endDate": "2021-08-01",
+      "summary": "Researched sleep and memory consolidation using EEG and sensory stimulus experiments.",
+      "highlights": [
+        "Learned R and coded experimental procedures",
+        "Recruited participants and analyzed sleep-related brain activity"
+      ]
+    }
+  ],
+    "leadership": [
+    {
+      "position": "President",
+      "organization": "Society for Quantitative Approaches to Social Research, Columbia University",
+      "startDate": "2024-10-01",
+      "endDate": "2025-05-01",
+      "summary": "Reinstated the club and secured funding.",
+      "highlights": [
+        "Coordinated executive board operations",
+        "Organized events promoting quantitative methods in social research"
+      ]
+    },
+    {
+      "position": "Co-Head",
+      "organization": "Psychology Peer Mentor Program, Lafayette College",
+      "startDate": "2020-08-01",
+      "endDate": "2023-05-01",
+      "summary": "Led peer mentorship program for psychology students.",
+      "highlights": [
+        "Supervised 20 mentors and supported communication with mentees and faculty"
+      ]
+    },
+    {
+      "position": "Executive Board Member",
+      "organization": "McKelvy Scholar House, Lafayette College",
+      "startDate": "2022-09-01",
+      "endDate": "2023-05-01",
+      "summary": "Created and managed social media content highlighting scholars and events."
+    },
+    {
+      "position": "President",
+      "organization": "Speech & Debate, Lafayette College",
+      "startDate": "2020-08-01",
+      "endDate": "2022-08-01",
+      "summary": "Led team communications, mentorship, and events.",
+      "highlights": [
+        "Mentored new members in speech writing and tournament prep",
+        "Managed team\u2019s social media and organized events"
+      ]
+    },
+    {
+      "position": "Contributing Writer",
+      "organization": "The Lafayette Newspaper, Lafayette College",
+      "startDate": "2019-08-01",
+      "endDate": "2022-08-01",
+      "summary": "Wrote weekly features and op-eds; conducted interviews and reporting.",
+      "url": "https://lafayettestudentnews.com/140734/op-ed/op-ed-lafayettes-ableism-runs-deeper-than-ramps/"
+    },
+    {
+      "position": "Secretary",
+      "organization": "Lafayette Leaders, Lafayette College",
+      "startDate": "2021-08-01",
+      "endDate": "2022-05-01",
+      "summary": "Managed budget and communicated with student government.",
+      "highlights": [
+        "Fostered inclusive environment for minority students in STEM"
+      ]
+    },
+    {
+      "position": "Equity & Inclusion Committee Member",
+      "organization": "Student Government, Lafayette College",
+      "startDate": "2020-06-01",
+      "endDate": "2021-06-01",
+      "summary": "Advanced equity initiatives on campus.",
+      "highlights": [
+        "Helped establish the UndocuFund for undocumented students",
+        "Hosted events on queer history and mental health awareness"
+      ]
+    }
+  ],
+   "awards": [
     {
       "title": "McKelvy Scholar",
       "date": "Mar 2022 - May 2023",
@@ -105,91 +300,59 @@
       "summary": "Research focused on the use of memory reactivation techniques during sleep to assess whether unique or shared information is better consolidated."
     }
   ],
-  "work": [
-    {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "organization": "Orange County Democratic Party",
+      "location": "Orange County, NC",
+      "position": "Volunteer",
+      "startDate": "2023-08-01",
+      "endDate": "2024-01-01",
+      "summary": "Supported voter outreach efforts, helped register new voters, and organized high school events.",
+      "highlights": [
+        "Helped register 10 new voters per week.",
+        "Led data collection efforts and high school outreach programming."
+      ]
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "organization": "FAB Philly Youth",
+      "location": "Philadelphia, PA",
+      "position": "Youth Volunteer",
+      "startDate": "2022-06-01",
+      "endDate": "2022-08-01",
+      "summary": "Volunteered to support children from low-income families through educational, social, and nutritional programming.",
+      "highlights": [
+        "Volunteered over 50 hours in 9 weeks.",
+        "Provided meals and academic support to underserved youth."
+      ]
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "organization": "Birthday Fundraisers",
+      "location": "Virtual",
+      "position": "Fundraiser Organizer",
+      "startDate": "2020-06-01",
+      "endDate": "2022-06-30",
+      "summary": "Organized fundraisers to support social justice and basic needs organizations during birthday weeks.",
+      "highlights": [
+        "Raised a total of $5,500 for Food Bank NYC, The Brigid Alliance, and The Bethesda Project.",
+        "Supported causes like food insecurity, homelessness, and reproductive rights access."
+      ]
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+      "organization": "Joseph H. Firth Youth Center",
+      "location": "Phillipsburg, NJ",
+      "position": "Youth Mentor",
+      "startDate": "2019-08-01",
+      "endDate": "2020-03-01",
+      "summary": "Provided mentorship, homework assistance, and recreational engagement for underserved youth.",
+      "highlights": [
+        "Mentored and supported up to 30 children weekly alongside four other volunteers.",
+        "Helped children with academics and emotional well-being through consistent visits."
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Spanish",
       "fluency": "Native speaker",
       "icon": ""
     },
@@ -197,42 +360,6 @@
       "language": "English",
       "fluency": "Fluent",
       "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
     }
   ]
 }
