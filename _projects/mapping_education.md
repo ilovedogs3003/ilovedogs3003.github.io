@@ -18,7 +18,7 @@ code_label: Open in Colab
             <a href="https://journals.sagepub.com/doi/full/10.1177/23328584211038939" target="_blank" rel="noopener">
             Kafka & Matheny (2021)</a>
         </i> 
-    do a fantastic job highlight the historical patterns of gentrification in the city, in addition to the seemingly targetted violence that comes from assuming "accidents of geography" are what cause these disparities.
+    do a fantastic job highlighting the historical patterns of gentrification in the city, in addition to the seemingly targetted violence that comes from assuming "accidents of geography" are what cause these disparities.
 </p>
 <p>
     You can click on the provided Colab Notebook to access the entirety of the code and the data cleaning process. As someone invested in the replicability of research, you can also access the original datasets below.
