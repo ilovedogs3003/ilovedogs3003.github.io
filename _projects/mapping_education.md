@@ -83,7 +83,7 @@ code_label: Open in Colab
         </div>
         <div id="zone-img" style="display:none;">
             <h5 class="text-center mb-3">Dropout Rates by School Zone</h5>
-            {% include figure.liquid loading="eager" path="assets/img/edxb_blab.png" title="Dropout Rates by School Zone" class="img-fluid rounded z-depth-0" %}
+            {% include figure.liquid loading="eager" path="assets/img/edxb_school_zones_dropout_map.png" title="Dropout Rates by School Zone" class="img-fluid rounded z-depth-0" %}
         </div>
     </div>
 </div>
@@ -106,29 +106,150 @@ document.getElementById('levelSelect').addEventListener('change', function() {
     Based on simple visual inspections, each of the maps paints a different picture of the educational landscape in New York City.
 </p>
 <p>
-    <b>Borough Level:</b> The first map presents average dropout rates aggregated at the borough level. It reveals striking disparities: The Bronx and Brooklyn exhibit the highest average dropout rates, with deep red shading signaling values above 30%, while Manhattan and Staten Island show comparatively lower dropout rates. However, this broader view can obscure within-borough variation and may overgeneralize the challenges each borough faces.
+    <b>Borough Level:</b> The first map presents average dropout rates aggregated at the borough level. It reveals striking disparities: The Bronx and Brooklyn exhibit the highest average dropout rates, with deep red shading signaling values around 16%, while Manhattan and Staten Island show comparatively lower dropout rates. However, this broader view can obscure within-borough variation and may overgeneralize the challenges each borough faces. It is also important to keep in mind the relatively small fluctuation presented here.
 </p>
 
 <p>
-    <b>School Zone Level:</b><br> The second map disaggregates data by individual school zones, offering a more granular and nuanced picture. Within both Brooklyn and the Bronx, we observe pockets of extremely high dropout rates concentrated in specific zones, while neighboring zones fare better. This localized perspective highlights the importance of looking beyond borough-level summaries to identify educational inequities that persist within smaller geographic areas.
+    <b>School Zone Level:</b><br> The second map disaggregates data by individual school zones, offering a more granular and nuanced picture. Within both Brooklyn and the Bronx, we observe pockets of extremely high dropout rates concentrated in specific zones while neighboring zones fare better. This localized perspective highlights the importance of looking beyond borough-level summaries to identify educational inequities that persist within smaller geographic areas.
 </p>
 
 <p>
     Together, these visualizations highlight the need for targeted, zone-specific interventions, as citywide or borough-wide policies may miss the communities most at risk.
 </p>
 
+<h5 style="color:rgb(224, 10, 10);">Interactive Summary Tables</h5>
+<div style="margin-bottom: 4px; width: 100%; text-align: left; margin-bottom: 0;">
+    <iframe src="https://ilovedogs3003.github.io/lfs/html/edxb_int_sumtab.html"
+                    width="100%" height="1000px" style="border: none; display: block; margin: 0; padding: 0;" loading="eager"></iframe>
+</div>
+
+
 <h4 style="color:rgb(224, 10, 10);">Bivariate Choropleth Maps</h4>
 <p>Bivariate choropleth maps are thematic maps that display the spatial relationship between two variables at once. By blending two color scales, these maps help identify areas where high or low values of both variables intersect. This allows for a more nuanced understanding of overlapping inequalities than single-variable maps alone.</p>
 
-<iframe src="https://ilovedogs3003.github.io/lfs/maps/bivariate_dems.html"
-        width="100%" height="600" style="border:none;" loading="eager"></iframe>
-
+<div style="text-align: center;">
+    <iframe src="https://ilovedogs3003.github.io/lfs/maps/edxb_bivariate_dems.html"
+            width="100%" height="600" style="border:none;" loading="eager"></iframe>
+    <div style="font-size: 0.98em; color: #555; margin-top: 8px;">
+        <em>
+            This map visualizes the concentration of students of color alongside dropout rates across NYC. Areas with higher proportions of students of color tend to show comparably higher dropout rates.
+        </em>
+    </div>
+</div>
+<br>
 <h4 style="color:rgb(224, 10, 10);">Geospatial Analysis</h4>
-<li>This will be added soon: it is simply a look into spatial autocorrelation and the variables that best predict dropout rates!</li>
-<li> Formatting HTML takes a surpringly long amount of time </li>
 
-<!--
-<p>
-    The map aboves depicts the relationship between the racial composition of a school and the dropout rates. It is important to not that the scale for the percent of White students was reversed to make the map more intuitive (i.e., lighter colors signals a higher % of white students). In it we see the following:
-        <li>Despite brooklyn demonstrating some of the highest dropout rates, we see how those rates are congregated around districts with very low percent of white students.</li>
-        <li></li>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: flex-start; margin-bottom: 2em;">
+    <div class="model-section" style="flex: 1 1 300px; min-width: 280px; max-width: 350px; background: #fafafa; border-radius: 8px; padding: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <h3>1. Ordinary Least Squares</h3>
+        <p>
+            OLS is a baseline linear regression model that assumes independence between observations.
+            It estimates the relationship between dependent and independent variables by minimizing the sum of squared residuals.
+        </p>
+        <ul>
+            <li><strong>Assumes:</strong> No spatial autocorrelation in the data.</li>
+            <li><strong>Limitation:</strong> If residuals are spatially autocorrelated, standard errors and significance tests may be biased.</li>
+            <li><strong>Use Case:</strong> When data points are spatially independent or when spatial effects are negligible.</li>
+        </ul>
+        <button class="expand-btn" onclick="toggleModelOutput('ols-output')">Show Model Output</button>
+        <div id="ols-output" style="display:none; margin-top:12px;">
+            <iframe src="https://ilovedogs3003.github.io/lfs/html/edxb_ols_regression_summary.html"
+                width="100%" height="600" style="border:none;" loading="eager"></iframe>
+        </div>
+    </div>
+
+    <div class="model-section" style="flex: 1 1 300px; min-width: 280px; max-width: 350px; background: #fafafa; border-radius: 8px; padding: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <h3>2. Spatial Lag Model</h3>
+        <p>
+            The Spatial Lag Model includes a spatially lagged dependent variable (e.g., <code>W * y</code>) as a predictor. It assumes that what happens in one location directly influences outcomes in neighboring locations.
+        </p>
+        <ul>
+            <li><strong>Captures:</strong> Spatial dependence in the outcome variable.</li>
+            <li><strong>Implication:</strong> A change in one region can "spill over" and affect neighboring areas.</li>
+            <li><strong>Use Case:</strong> When you're interested in modeling diffusion, feedback loops, or interdependence (e.g., crime in one area affecting nearby areas).</li>
+        </ul>
+        <button class="expand-btn" onclick="toggleModelOutput('lag-output')">Show Model Output</button>
+        <div id="lag-output" style="display:none; margin-top:12px;">
+            <iframe src="https://ilovedogs3003.github.io/lfs/html/edxb_lag_model_summary.html"
+                width="100%" height="600" style="border:none;" loading="eager"></iframe>
+        </div>
+    </div>
+
+    <div class="model-section" style="flex: 1 1 300px; min-width: 280px; max-width: 350px; background: #fafafa; border-radius: 8px; padding: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <h3>3. Spatial Error Model</h3>
+        <p>
+            The Spatial Error Model assumes that spatial dependence exists in the error term, not in the dependent variable itself.
+            It captures omitted spatially structured variables that influence the outcome indirectly.
+        </p>
+        <ul>
+            <li><strong>Captures:</strong> Spatial autocorrelation in the error term (e.g., unmeasured contextual factors).</li>
+            <li><strong>Implication:</strong> Accounts for bias and inefficiency in OLS due to spatially correlated unobservables.</li>
+            <li><strong>Use Case:</strong> When residual spatial patterns remain even after controlling for observed variables.</li>
+        </ul>
+        <button class="expand-btn" onclick="toggleModelOutput('error-output')">Show Model Output</button>
+        <div id="error-output" style="display:none; margin-top:12px;">
+            <iframe src="https://ilovedogs3003.github.io/lfs/html/edxb_error_model_summary.html"
+                width="100%" height="600" style="border:none;" loading="eager"></iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleModelOutput(id) {
+    var el = document.getElementById(id);
+    var btn = event.target;
+    if (el.style.display === "none") {
+        el.style.display = "";
+        btn.textContent = "Hide Model Output";
+    } else {
+        el.style.display = "none";
+        btn.textContent = "Show Model Output";
+    }
+}
+</script>
+
+<h5 style="color:rgb(224, 10, 10);">Interpretation of Model Results</h5>
+
+  <div class="section">
+    <h6>1. OLS Model</h6>
+    <p>
+      The Ordinary Least Squares (OLS) model suggests a moderate fit with an R-squared of 0.375, meaning roughly 38% of the variation in dropout rates is explained by the covariates. Several predictors are statistically significant:
+    </p>
+    <ul>
+      <li><strong>% Black</strong>, <strong>% Hispanic</strong>, <strong>% Students with Disabilities</strong>, <strong>% English Language Learners</strong>, and <strong>Cohort Size</strong> are positively associated with dropout rates and significant at conventional levels (p &lt; 0.05).</li>
+      <li>Borough effects are not significant, indicating limited unique contribution once demographic factors are controlled for.</li>
+      <li>The F-statistic is highly significant, indicating the model overall is meaningful.</li>
+    </ul>
+    <p>
+      However, diagnostic metrics (Omnibus, Jarque-Bera) suggest non-normality in residuals, and the high condition number indicates possible multicollinearity.
+    </p>
+  </div>
+
+  <div class="section">
+    <h6>2. Spatial Lag Model</h6>
+    <p>
+      The Spatial Lag Model improves slightly on fit (Pseudo R-squared = 0.3805). This model includes a spatially lagged dependent variable (<code>W_perc_dropout</code>), though this term is not significant (p = 0.357), implying weak spatial autocorrelation in dropout rates.
+    </p>
+    <ul>
+      <li>Key predictors remain significant: <strong>% Black</strong>, <strong>% Hispanic</strong>, <strong>% Students with Disabilities</strong>, <strong>% ELL</strong>, <strong>Cohort Size</strong>.</li>
+      <li>Impact decomposition shows small indirect effects, suggesting limited spatial spillover effects between neighboring areas.</li>
+      <li>Borough effects are larger in magnitude than OLS, though still not statistically significant.</li>
+    </ul>
+    <p>
+      This model is appropriate when you suspect the outcome in one region is directly influenced by outcomes in neighboring areas.
+    </p>
+  </div>
+
+  <div class="section">
+    <h6>3. Spatial Error Model</h6>
+    <p>
+      The Spatial Error Model has similar fit (Pseudo R-squared = 0.379). Unlike the Lag model, it assumes spatial autocorrelation is in the residuals. The <code>lambda</code> parameter is very small and not statistically significant (p = 0.859), suggesting no major unaccounted spatial error correlation.
+    </p>
+    <ul>
+      <li>Significant predictors are consistent with the other models: <strong>% Black</strong>, <strong>% Hispanic</strong>, <strong>% Students with Disabilities</strong>, <strong>% ELL</strong>, <strong>Cohort Size</strong>.</li>
+      <li>Spatial dependence seems negligible, with both <code>W_perc_dropout</code> and <code>lambda</code> being insignificant.</li>
+    </ul>
+    <p>
+      The Spatial Error Model is ideal when unobserved spatial processes (not captured by predictors) might be driving patterns, but here it adds minimal value over OLS.
+    </p>
+  </div>
