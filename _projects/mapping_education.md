@@ -18,8 +18,7 @@ code_label: Open in Colab
             <a href="https://journals.sagepub.com/doi/full/10.1177/23328584211038939" target="_blank" rel="noopener">
             Kafka & Matheny (2021)</a>
         </i> 
-    do a fantastic job highlighting the historical patterns of gentrification in the city, in addition to the seemingly targetted violence that comes from assuming "accidents of geography" are what cause these disparities.
-</p>
+    do a fantastic job highlighting the historical patterns of gentrification in the context of education in New York City.
 <p>
     You can click on the provided Colab Notebook to access the entirety of the code and the data cleaning process. As someone invested in the replicability of research, you can also access the original datasets below.
 </p>
@@ -59,7 +58,7 @@ code_label: Open in Colab
     </li>
 </ul>
 <p>
-    There was a lot of other data processed, however, they were not used in the final report due to no dictionary of the variables being readily accessible. This is important to know i) how variables are being defined, ii) what they are actually measuring, and iii) how they measure these things. 
+    There was a lot of other data processed, all of which is provided to you via the Colab Notebook 
 </p>
 
 
@@ -80,7 +79,7 @@ code_label: Open in Colab
     <div class="col-sm mt-3 mt-md-0" style="max-width:66%; margin:auto;">
         <div id="borough-img">
             <h5 class="text-center mb-3">Dropout Rates by Borough</h5>
-            {% include figure.liquid loading="eager" path="assets/img/edxb_bldr.png" title="Dropout Rates by Borough" class="img-fluid rounded z-depth-0" %}
+            {% include figure.liquid loading="eager" path="assets/img/edxb_borough_dropout_map.png" title="Dropout Rates by Borough" class="img-fluid rounded z-depth-0" %}
         </div>
         <div id="zone-img" style="display:none;">
             <h5 class="text-center mb-3">Dropout Rates by School Zone</h5>

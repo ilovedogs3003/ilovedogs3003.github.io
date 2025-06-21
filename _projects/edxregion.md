@@ -6,7 +6,7 @@ img: assets/img/gss_all_reg_ed.png
 importance: 5
 category: Python
 related_publications: true
-code_url: https://drive.google.com/file/d/1_F1ssjQa_4PZLKqFrf9S5aYKSt7SqJ6I/view?usp=sharing
+code_url: https://colab.research.google.com/drive/1_F1ssjQa_4PZLKqFrf9S5aYKSt7SqJ6I
 code_label: Open in Colab
 ---
 <hr>
