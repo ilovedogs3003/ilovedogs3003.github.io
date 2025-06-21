@@ -53,12 +53,7 @@ ninja.data = [{
             },},{id: "news-currently-developing-formatting-and-cleaning-the-following-scholarship-web-scraper-the-effects-of-affirmative-action-bans-on-higher-education-enrollment-comprehensive-representative-voting-track-record-20-labs-from-my-master-39-s-program",
           title: 'Currently developing, formatting, and cleaning the following Scholarship Web Scraper The Effects of...',
           description: "",
-          section: "News",},{id: "projects-qr-code-generation",
-          title: 'QR Code Generation',
-          description: "No websites, just Python!",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/10_project/";
-            },},{id: "projects-teach-for-america",
+          section: "News",},{id: "projects-teach-for-america",
           title: 'Teach for America',
           description: "The Importance of Adequate Research Design",
           section: "Projects",handler: () => {
@@ -72,7 +67,7 @@ ninja.data = [{
           title: 'Education by Region',
           description: "Educational Modeling with Longitudinal Data",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
+              window.location.href = "/projects/edxregion/";
             },},{id: "projects-education-by-borough",
           title: 'Education by Borough',
           description: "Geospatial Analysis and Modeling",
@@ -83,6 +78,11 @@ ninja.data = [{
           description: "KNN, OLS, Ridge and Lasso Regressions in Educational Modeling",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ml_lab2/";
+            },},{id: "projects-qr-code-generation",
+          title: 'QR Code Generation',
+          description: "No websites, just Python!",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/qr_code/";
             },},{
         id: 'social-email',
         title: 'email',
