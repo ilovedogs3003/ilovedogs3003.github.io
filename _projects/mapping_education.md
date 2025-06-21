@@ -132,5 +132,3 @@ document.getElementById('levelSelect').addEventListener('change', function() {
     The map aboves depicts the relationship between the racial composition of a school and the dropout rates. It is important to not that the scale for the percent of White students was reversed to make the map more intuitive (i.e., lighter colors signals a higher % of white students). In it we see the following:
         <li>Despite brooklyn demonstrating some of the highest dropout rates, we see how those rates are congregated around districts with very low percent of white students.</li>
         <li></li>
--->
-
