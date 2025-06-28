@@ -3,7 +3,7 @@ layout: page
 title: QR Code Generation
 description: No websites, just Python!
 img: assets/img/animated_qrcode.gif
-importance: 6
+importance: 7
 category: Personal
 related_publications: true
 code_url: https://colab.research.google.com/drive/1YJWbboQpqRUVI2qyx852cIaqJ9feHG_k?usp=sharing
