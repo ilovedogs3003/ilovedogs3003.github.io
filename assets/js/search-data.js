@@ -68,6 +68,11 @@ ninja.data = [{
           description: "Educational Modeling with Longitudinal Data",
           section: "Projects",handler: () => {
               window.location.href = "/projects/edxregion/";
+            },},{id: "projects-deconstructing-monstrosity",
+          title: 'Deconstructing Monstrosity',
+          description: "Sentiment Analysis for Frankenstein and Dracula",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/frank_nlp/";
             },},{id: "projects-education-by-borough",
           title: 'Education by Borough',
           description: "Geospatial Analysis and Modeling",
